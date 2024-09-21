@@ -6,8 +6,6 @@ import Markdown from '../components/Markdown.astro';
 const explainer = ` 
 <h2>Netlify: The Premier Platform for Modern Web Development</h2>
 
-<h3>Streamlined Deployment for Developers</h3>
-
 Netlify revolutionizes the way developers deploy and manage their web applications. With its powerful suite of tools, developers can effortlessly push their code and watch as their changes are reflected live on their websites. Gone are the days of tedious server setups; Netlify automates the deployment process, allowing you to focus on building exceptional user experiences.
 
 In addition to straightforward deployment, Netlify integrates seamlessly with various static site generators, making it an excellent choice for developers looking to harness the power of modern frameworks. Whether you’re building a blog, a portfolio, or a complex application, Netlify's features support the full lifecycle of your project.
@@ -24,8 +22,8 @@ As a Netlify user, you’re not just leveraging a powerful platform; you’re jo
 
 For those eager to explore further, we invite you to check out our latest blog posts. Stay updated with insights, tutorials, and case studies that showcase how to maximize your use of Netlify. 
 
-<p class="mb-8">
-    <a href="https://usersguide.netlify.app/blog" class="btn btn-lg btn-primary sm:btn-wide">Read Latest Blog Posts</a>
+<p class="mb-8" style="text-align: center;">
+    <a href="https://usersguide.netlify.app/blog" class="btn btn-lg btn-primary sm:btn-wide" style="font-size: 0.8rem;">Read Latest Blog Posts</a>
 </p>
 `;
 
@@ -41,8 +39,13 @@ For those eager to explore further, we invite you to check out our latest blog p
     <title>Netlify: Users Guide, Insights & Reviews</title>
     <meta name="description" content="Discover the power of Netlify with Users Guide. Gain insights, tips, and best practices for leveraging web projects." />
     <style>
-        a {
-            color: #0077cc; /* Change link color to a blueish tone */
+
+        .btn {
+            transition: transform 0.2s; /* Add smooth transition for hover */
+        }
+        
+        .btn:hover {
+            transform: scale(0.95); /* Shrink the button on hover */
         }
     </style>
 </head>
