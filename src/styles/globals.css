@@ -36,6 +36,23 @@
         @apply px-1 py-0.5 font-mono rounded bg-[#1f1f1f] text-[#F67280];
         font-size: 0.9em;
     }
+
+   .logo {
+    width: 30vw; /* Adjust width relative to viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 340px; /* Maximum width */
+    max-height: 90px; /* Maximum height */
+    margin: 10px auto; /* Center with top/bottom margins */
+    display: block; /* Center in a block-level element */
+}
+
+@media (max-width: 640px) {
+    .logo {
+        width: 50vw; /* Wider for smaller screens */
+        max-width: 80px; /* Limit max width on mobile */
+        max-height: 60px; /* Limit max height on mobile */
+    }
+}
 }
 
 @layer components {
