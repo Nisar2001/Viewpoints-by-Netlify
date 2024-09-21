@@ -1,4 +1,4 @@
----
+--- 
 import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
@@ -27,27 +27,23 @@ For those eager to explore further, we invite you to check out our latest blog p
 </p>
 `;
 
----
-
-<Layout title="Netlify: Users Guide, Insights & Reviews">
-    <ContextAlert class="mb-4" />
-    <Markdown content={explainer} class="text-lg mb-10" />
-</Layout>
-
-<!-- Add meta tags here -->
-<head>
-    <title>Netlify: Users Guide, Insights & Reviews</title>
+const metaTags = `
+    <link rel="canonical" href="https://usersguide.netlify.app/">
     <meta name="description" content="Discover the power of Netlify with Users Guide. Gain insights, tips, and best practices for leveraging web projects." />
-   <link rel="canonical" href="https://usersguide.netlify.app/">
- <meta property="og:title" content="Netlify: Users Guide, Insights & Reviews" />
+    <meta property="og:title" content="Netlify: Users Guide, Insights & Reviews" />
     <meta property="og:description" content="Discover the power of Netlify with Users Guide. Gain insights, tips, and best practices for leveraging web projects." />
     <meta property="og:image" content="https://s3.amazonaws.com/i.snag.gy/WJwfVn.jpg" />
     <meta property="og:url" content="https://usersguide.netlify.app/" />
     <meta property="og:type" content="website" />
-
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Netlify: Users Guide, Insights & Reviews">
     <meta name="twitter:description" content="Discover the power of Netlify with Users Guide. Gain insights, tips, and best practices for leveraging web projects.">
     <meta name="twitter:image" content="https://s3.amazonaws.com/i.snag.gy/WJwfVn.jpg">
-</head>
+`;
+
+---
+
+<Layout title="Netlify: Users Guide, Insights & Reviews" meta={metaTags}>
+    <ContextAlert class="mb-4" />
+    <Markdown content={explainer} class="text-lg mb-10" />
+</Layout>
