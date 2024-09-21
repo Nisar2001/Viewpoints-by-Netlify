@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const isExternal = link.hostname !== window.location.hostname;
         const relValue = link.getAttribute('rel');
 
-        // Check if the link is external and doesn't have rel="black" or rel="noopener"
-        if (isExternal && (!relValue || (!relValue.includes('black') && !relValue.includes('noopener')))) {
+        // Check if the link is external and doesn't have rel="black" or rel="noopener", or if it’s not the own domain
+        if (isExternal && link.hostname !== 'usersguide.netlify.app' && (!relValue || (!relValue.includes('black') && !relValue.includes('noopener')))) {
             link.setAttribute('rel', 'nofollow');
         }
     });
@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     images.forEach(image => {
         const src = image.getAttribute('src');
+        const isExternal = new URL(src).hostname !== window.location.hostname;
+
         if (src && isExternal) {
             image.setAttribute('rel', 'nofollow noreferer');
         }
