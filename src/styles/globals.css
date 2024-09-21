@@ -39,9 +39,9 @@
 
    .logo {
     width: 30vw; /* Adjust width relative to viewport width */
-    height: auto; /* Maintain aspect ratio */
+    height: 130px; /* Maintain aspect ratio */
     max-width: 340px; /* Maximum width */
-    max-height: 90px; /* Maximum height */
+    max-height: 130px; /* Maximum height */
     margin: 10px auto; /* Center with top/bottom margins */
     display: block; /* Center in a block-level element */
 }
