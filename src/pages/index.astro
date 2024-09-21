@@ -4,21 +4,21 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = ` 
-Netlify: The Premier Platform for Modern Web Development
+<h2>Netlify: The Premier Platform for Modern Web Development</h2>
 
-### Streamlined Deployment for Developers
+<h3>Streamlined Deployment for Developers</h3>
 
 Netlify revolutionizes the way developers deploy and manage their web applications. With its powerful suite of tools, developers can effortlessly push their code and watch as their changes are reflected live on their websites. Gone are the days of tedious server setups; Netlify automates the deployment process, allowing you to focus on building exceptional user experiences.
 
 In addition to straightforward deployment, Netlify integrates seamlessly with various static site generators, making it an excellent choice for developers looking to harness the power of modern frameworks. Whether you’re building a blog, a portfolio, or a complex application, Netlify's features support the full lifecycle of your project.
 
-### Advanced Features for Optimal Performance
+<h3>Advanced Features for Optimal Performance</h3>
 
 Netlify is not just about deployment. It offers a plethora of advanced features that elevate your website's performance. With [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and [Edge Middleware](https://docs.astro.build/en/guides/middleware/), your site can deliver dynamic content at lightning speed. Additionally, the platform supports [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/), ensuring that your visitors always receive the most up-to-date information without sacrificing performance.
 
 This combination of features makes Netlify a preferred choice among developers who prioritize speed, reliability, and scalability. The ease of use paired with robust capabilities makes it an ideal platform for any project, whether you're a solo developer or part of a large team.
 
-### Join the Community of Innovators
+<h3>Join the Community of Innovators</h3>
 
 As a Netlify user, you’re not just leveraging a powerful platform; you’re joining a community of like-minded developers and creators. Access a wealth of resources, including extensive documentation and community forums, to help you make the most of your projects. The platform’s commitment to continuous improvement and innovation ensures that you’ll always be equipped with the latest tools and best practices.
 
@@ -33,7 +33,6 @@ For those eager to explore further, we invite you to check out our latest blog p
 
 <Layout title="Netlify: Users Guide, Insights & Reviews">
     <ContextAlert class="mb-4" />
-    <h1 class="mb-10">Welcome to UsersGuide</h1>
     <Markdown content={explainer} class="text-lg mb-10" />
 </Layout>
 
