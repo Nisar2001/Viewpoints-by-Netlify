@@ -4,15 +4,28 @@
 
 @layer base {
     h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl;
+        @apply text-4xl font-bold tracking-tight sm:text-5xl; /* Heading 1 */
     }
 
     h2 {
-        @apply text-2xl font-bold sm:text-3xl;
+        @apply text-2xl font-bold sm:text-3xl; /* Heading 2 */
+    }
+
+    h3 {
+        @apply text-xl font-bold sm:text-2xl; /* Heading 3 */
+    }
+
+    h4 {
+        @apply text-lg font-bold; /* Heading 4 */
+    }
+
+    h5 {
+        @apply text-base font-bold; /* Heading 5 */
     }
 
     a {
         @apply underline transition hover:opacity-80;
+        color: #00eaff; /* Change link color to #00eaff */
     }
 
     pre {
