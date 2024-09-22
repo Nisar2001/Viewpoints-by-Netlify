@@ -53,6 +53,19 @@
         max-height: 60px; /* Limit max height on mobile */
     }
 }
+
+     /* New styles for lists and strong tag */
+    ol, ul {
+        @apply ml-4; /* Shift lists 10px to the right */
+    }
+
+    li {
+        @apply mb-2; /* Increase the gap between list items */
+    }
+
+    strong {
+        @apply text-[#e0e0e0]; /* Slightly lighter gray for strong text */
+    }
 }
 
 @layer components {
