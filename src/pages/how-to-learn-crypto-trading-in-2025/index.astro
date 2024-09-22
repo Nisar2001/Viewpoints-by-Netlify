@@ -1,6 +1,5 @@
 ---
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import Layout from '../../layouts/Layout.astro';
 import ContextAlert from '../../components/ContextAlert.astro';
 import Markdown from '../../components/Markdown.astro';
 
@@ -96,37 +95,13 @@ Dofollow Link---> <a href="https://docs.astro.build/en/guides/" rel="noopener">S
 
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="font" type="font/woff2" href="@fontsource/inter/files/inter-latin-400-normal.woff2?url" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="@fontsource/inter/files/inter-latin-800-normal.woff2?url" crossorigin />
-
-    <title>How to Learn Crypto Trading in 2025: A Complete Guide</title>
-    <meta name="description" content="Learn the essentials of crypto trading in 2025 with tips on strategy, risk management, and the latest tools for navigating the volatile market." />
-    <link rel="canonical" href="https://usersguide.netlify.app/how-to-learn-crypto-trading-in-2025/">
-    <meta property="og:title" content="How to Learn Crypto Trading in 2025: A Complete Guide" />
-    <meta property="og:description" content="Learn the essentials of crypto trading in 2025 with tips on strategy, risk management, and the latest tools for navigating the volatile market." />
-    <meta property="og:image" content="https://s3.amazonaws.com/i.snag.gy/WJwfVn.jpg" />
-    <meta property="og:url" content="https://usersguide.netlify.app/how-to-learn-crypto-trading-in-2025/" />
-    <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="How to Learn Crypto Trading in 2025: A Complete Guide">
-    <meta name="twitter:description" content="Learn the essentials of crypto trading in 2025 with tips on strategy, risk management, and the latest tools for navigating the volatile market.">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/i.snag.gy/WJwfVn.jpg">
-</head>
-<body>
-    <Header />
+<Layout 
+    title="How to Learn Crypto Trading in 2025: A Complete Guide" 
+    description="Learn the essentials of crypto trading in 2025 with tips on strategy, risk management, and the latest tools for navigating the volatile market."
+    canonical="https://usersguide.netlify.app/how-to-learn-crypto-trading-in-2025/"
+    ogImage="https://s3.amazonaws.com/i.snag.gy/WJwfVn.jpg"
+>
     <ContextAlert class="mb-4" />
     <Markdown content={explainer} class="text-lg mb-10" />
-    <Footer />
-</body>
-</html>
+</Layout>
+
